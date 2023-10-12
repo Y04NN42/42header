@@ -9,7 +9,7 @@ let s:start		= '/*'
 let s:end		= '*/'
 let s:fill		= '*'
 let s:length	= 80
-let s:margin	= 5
+let s:margin	= 4
 
 let s:types		= {
 			\'\.c$\|\.h$\|\.cc$\|\.hh$\|\.cpp$\|\.hpp$\|\.php':
