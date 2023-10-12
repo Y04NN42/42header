@@ -2,8 +2,8 @@ let s:asciiart = [
 			\"d88b  d88b  .d..d88b.",
 			\" dP 8Pwww. 8P  P  Y8 ",
 			\"dP  8b  d8 8b  b  d8 ",
-			\"d888 `Y88P' `Y'`Y88P'",
-			\]
+			\"d888 `Y88P' `Y'`Y88P'"
+\]
 
 let s:start		= '/*'
 let s:end		= '*/'
