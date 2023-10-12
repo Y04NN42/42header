@@ -1,10 +1,11 @@
 let s:asciiart = [
-			\"██████╗  ██████╗  ██████╗",
-			\"╚════██╗██╔════╝ ██╔═████",
-			\"█████╔╝███████╗ ██║██╔██║",
-			\"██╔═══╝ ██╔═══██╗████╔╝██",
-			\"███████╗╚██████╔╝╚██████╔",
-			\"╚══════╝ ╚═════╝  ╚═════╝"
+			\"        :::      ::::::::",
+			\"      :+:      :+:    :+:",
+			\"    +:+ +:+         +:+  ",
+			\"  +#+  +:+       +#+     ",
+			\"+#+#+#+#+#+   +#+        ",
+			\"     #+#    #+#          ",
+			\"    ###   ########.fr    "
 			\]
 
 let s:start		= '/*'
@@ -78,23 +79,23 @@ function! s:line(n)
 endfunction
 
 function! s:user()
-	if exists('g:user2600')
-		return g:user2600
+	if exists('g:user42')
+		return g:user42
 	endif
-	let l:user = $USER2600
+	let l:user = $USER
 	if strlen(l:user) == 0
-		let l:user = "pwdawan"
+		let l:user = "marvin"
 	endif
 	return l:user
 endfunction
 
 function! s:mail()
-	if exists('g:mail2600')
-		return g:mail2600
+	if exists('g:mail42')
+		return g:mail42
 	endif
-	let l:mail = $MAIL2600
+	let l:mail = $MAIL
 	if strlen(l:mail) == 0
-		let l:mail = "pwdawan@ecole2600.com"
+		let l:mail = "marvin@42.fr"
 	endif
 	return l:mail
 endfunction
@@ -146,5 +147,3 @@ endfunction
 command! Stdheader call s:stdheader ()
 map <F1> :Stdheader<CR>
 autocmd BufWritePre * call s:update ()
-
-"Un grand merci à Alexandre GUIOT de l'école 42: https://github.com/alexandregv"
